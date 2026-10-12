@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e5e5e5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #555;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: #ff8c42;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover,
+nav a.active {
+    background: #ff8c42;
+    color: #222;
+}
+
+.container {
+    max-width: 850px;
+    margin: 25px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #bbb;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #e87525;
+    border-bottom: 2px solid #ff8c42;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: #555;
+    margin: 12px 0;
+}
+
+p {
+    margin: 8px 0;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 6px 0;
+}
+
+.btn,
+button {
+    background: #ff8c42;
+    color: #222;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 8px 3px;
+}
+
+.btn:hover,
+button:hover {
+    background: #555;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background: #555;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #eee;
+}
+
+.welcome {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.welcome p {
+    margin: 12px 0;
+}
+
+footer {
+    background: #555;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+
+    .container {
+        margin: 12px;
+        padding: 18px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+
+    .btn {
+        margin: 8px 3px;
+    }
+}
+
+@media print {
+    header nav,
+    footer,
+    button,
+    .btn {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .container {
+        box-shadow: none;
+        margin: 0;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    section {
+        break-inside: avoid;
+    }
+}
